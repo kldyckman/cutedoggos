@@ -1,155 +1,154 @@
 /* Universal Styles */
 
 body {
-    margin: 0;
-    font-size: 22px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
+  max-width: 1600px;
+  margin: auto;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
   
   
-  /* Header */
+/* Header */
   
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  /* Nav */
+/* Nav */
   
-  nav {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 10%;
-  }
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+}
   
-  nav p {
-    display: inline-block;
-    padding: 10px 50px;
-  }
+nav p {
+  display: inline-block;
+  padding: 10px 50px;
+}
   
-  nav a {
-    color: black;
-  }
+nav a {
+  color: black;
+}
   
-  /* Main */
+/* Main */
   
-  main {
-    padding-top: 20px;
-  }
+main {
+  padding-top: 20px;
+}
   
-  /* Mission Statement */
+/* Mission Statement */
   
+.mission {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-image: url(https://thehappypuppysite.com/wp-content/uploads/2018/06/Shiba-Inu-Wonderful-Watchdog-or-Family-Pet_-HP-long.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+.mission .container {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 100px;
+}
+  
+/* Dogs */
+  
+.dogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+  
+.dog {
+  justify-content: center;
+  align-items: center;
+}
+  
+.dog img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  height: auto;
+  border-radius: 30px;
+}
+  
+.dog p {
+  margin-top: 0px;
+}
+  
+  
+/* Team */
+  
+.team .container {
+  background-image: url(https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+.teammate {
+  padding: 10px;
+  flex-basis: 280px;
+}
+  
+.teammate img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+  
+.name {
+  background-color: white;
+  padding: 0px;
+  margin: 10px auto;
+  width: 200px;
+  border-radius: 15px;
+}
+  
+.name h3 {
+  margin: 0px auto;
+}
+  
+.name p {
+  margin-top: 5px;
+}
+  
+/* Smaller Screens */
+  
+@media only screen and (max-width: 600px) {
   .mission {
-    display: flex;
-    align-items: center;
-    height: 500px;
-    background-image: url(https://thehappypuppysite.com/wp-content/uploads/2018/06/Shiba-Inu-Wonderful-Watchdog-or-Family-Pet_-HP-long.jpg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-size: cover;
   }
   
   .mission .container {
-    background-color: white;
-    width: 300px;
-    padding: 20px;
-    align-items: flex-end;
-    border-radius: 100px;
-  }
-  
-  /* Dogs */
-  
-  .dogs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .dog {
-      justify-content: center;
-      align-items: center;
-  }
-  
-  .dog img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-    height: auto;
-    border-radius: 30px;
-  }
-  
-  .dog p {
-    margin-top: 0px;
-  }
-  
-  
-  /* Team */
-  
-  .team .container {
-      background-image: url(https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9);
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  
-  .teammate {
-      padding: 10px;
-      flex-basis: 280px;
-  }
-  
-  .teammate img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 200px;
-      height: auto;
-      border-radius: 15px;
-  }
-  
-  .name {
-    background-color: white;
-    padding: 0px;
-    margin: 10px auto;
-    width: 200px;
-    border-radius: 15px;
-  }
-  
-  .name h3 {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    justify-content: center;
     margin: 0px auto;
+    position: relative;
+    top: 170px;
+    width: 100%;
+    height: auto;
   }
-  
-  .name p {
-    margin-top: 5px;
-  }
-  
-  /* Smaller Screens */
-  
-  @media only screen and (max-width: 600px) {
-    .mission {
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-    }
-  
-    .mission .container {
-      padding-top: 0px;
-      padding-bottom: 50px;
-      justify-content: center;
-      margin: 0px auto;
-      position: relative;
-      top: 170px;
-      width: 100%;
-      height: auto;
-    }
 
-    .mission .container h2 {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
+  .mission .container h2 {
+    margin-top: 0px;
+    padding-top: 0px;
   }
-  
+}
   
